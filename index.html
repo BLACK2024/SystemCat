@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SystemCat</title>
+    <title>Sistema de Ventas para PYMEs</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
+    <!-- Icono -->
+    <link rel="icon" href="assets\images\SystemCat.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="assets/images/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
-            SystemCat
+            <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Sistema de Ventas
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,10 +37,9 @@
 
     <!-- Header -->
     <header class="jumbotron text-center bg-primary text-white">
-        <div class="container">
-            <h1 class="display-4">Mejoramos tu experiencia y la de tus clientes</h1>
-            <p class="lead">Un sistema de ventas básico para pequeños y medianos emprendimientos</p>
-        </div>
+        <h1 class="display-4">Mejoramos tu experiencia y de tus clientes</h1>
+        <p class="lead">Un sistema de ventas básico para pequeños y medianos emprendimientos</p>
+        <!-- <a href="#contact" class="btn btn-secondary btn-lg">Contacto</a> -->
     </header>
 
     <!-- Features Section -->
@@ -67,14 +70,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center">
+                    <img src="assets/images/hora.png" class="img-fluid mb-3" alt="Software a Medida">
                     <h4>Ahorra Tiempo</h4>
                     <p>Automatiza tareas repetitivas y enfócate en hacer crecer tu negocio.</p>
                 </div>
                 <div class="col-md-4 text-center">
+                    <img src="assets/images/usuario.png" class="img-fluid mb-3" alt="Software a Medida">
                     <h4>Reduce Errores</h4>
                     <p>Reduce errores humanos con cálculos y actualizaciones automáticas.</p>
                 </div>
                 <div class="col-md-4 text-center">
+                    <img src="assets/images/persona.png" class="img-fluid mb-3" alt="Software a Medida">
                     <h4>Mejora la Experiencia del Cliente</h4>
                     <p>Procesa ventas de manera rápida y eficiente, mejorando la satisfacción del cliente.</p>
                 </div>
@@ -88,10 +94,10 @@
             <h2 class="text-center">Contacto</h2>
             <p class="text-center">Para más información, por favor contáctanos.</p>
             <div class="row justify-content-center">
-                <div class="col-md-6">
-                    
+                <div class="col-md-8">
+                    <!-- Formulario de Contacto -->
                     <form action="https://formspree.io/f/manwwkdw" method="POST">
-                        <input type="hidden" name="_next" value="https://system-cat.vercel.app/">
+                        <input type="hidden" name="_next" value="https://tu-sitio-web.com/gracias.html">
                         <div class="form-group">
                             <label for="name">Nombre</label>
                             <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
@@ -106,18 +112,26 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
-                    
-                    
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Information -->
+    <section id="contact-info" class="py-8 bg-light">
+        <div class="container text-center">
+            <h2>Contáctanos también por:</h2>
+            <p>
+                <a href="https://api.whatsapp.com/send?phone=5493777312383"><i class="fab fa-whatsapp fa-3x"></i></a>
+                <a href="https://instagram.com/systemcat_24"><i class="fab fa-instagram fa-3x"></i></a>
+                <a href="mailto:systemcat.24@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
+            </p>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="text-center py-4">
-        <div class="container">
-            <p>&copy; 2023 Sistema de Ventas para PYMEs. Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2024 Sistema de Ventas para PYMEs. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->

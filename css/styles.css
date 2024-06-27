@@ -20,6 +20,18 @@ section#features .col-md-4 h4 {
     color: #343a40; /* Cambia el color del título */
 }
 
+
+section#benefits .col-md-4 img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px; /* Aumenta el espacio entre la imagen y el texto */
+}
+
+section#benefits .col-md-4 h4 {
+    color: #343a40; /* Cambia el color del título */
+}
+
+
 footer {
     background-color: #343a40;
     color: white;
