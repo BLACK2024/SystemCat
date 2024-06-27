@@ -7,14 +7,25 @@ header.jumbotron {
     background-image: url('assets/images/header-bg.jpg');
     background-size: cover;
     background-position: center;
+    padding: 100px 0; /* Aumenta el espacio alrededor del texto */
 }
 
 section#features .col-md-4 img {
     height: 100px;
     width: 100px;
+    margin-bottom: 15px; /* Aumenta el espacio entre la imagen y el texto */
+}
+
+section#features .col-md-4 h4 {
+    color: #343a40; /* Cambia el color del título */
 }
 
 footer {
     background-color: #343a40;
     color: white;
+    padding: 20px 0; /* Aumenta el espacio alrededor del texto */
+}
+
+footer a {
+    color: white; /* Cambia el color de los enlaces en el pie de página */
 }

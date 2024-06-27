@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Ventas para PYMEs</title>
+    <title>SystemCat</title>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Sistema de Ventas
+            SystemCat Sistema de Control y Ventas
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,9 +33,10 @@
 
     <!-- Header -->
     <header class="jumbotron text-center bg-primary text-white">
-        <h1 class="display-4">Mejoramos tu experiencia y de tus clientes</h1>
-        <p class="lead">Un sistema de ventas básico para pequeños y medianos emprendimientos</p>
-        <a href="#download" class="btn btn-secondary btn-lg">Descargar App de Prueba</a>
+        <div class="container">
+            <h1 class="display-4">Mejoramos tu experiencia y la de tus clientes</h1>
+            <p class="lead">Un sistema de ventas básico para pequeños y medianos emprendimientos</p>
+        </div>
     </header>
 
     <!-- Features Section -->
@@ -87,39 +88,36 @@
             <h2 class="text-center">Contacto</h2>
             <p class="text-center">Para más información, por favor contáctanos.</p>
             <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <form>
+                <div class="col-md-6">
+                    
+                    <form action="https://formspree.io/f/manwwkdw" method="POST">
+                        <input type="hidden" name="_next" value="https://system-cat.vercel.app/">
                         <div class="form-group">
                             <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Tu email">
+                            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Tu email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Mensaje</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Tu mensaje"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Enviar</button>
                     </form>
+                    
+                    
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="py-5 text-center bg-primary text-white">
-        <div class="container">
-            <h2>Prueba Nuestro Sistema de Ventas</h2>
-            <p>Descarga la versión de prueba y descubre cómo nuestro sistema puede ayudarte a gestionar tu negocio.</p>
-            <a href="#" class="btn btn-secondary btn-lg">Descargar App de Prueba</a>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="text-center py-4">
-        <p>&copy; 2023 Sistema de Ventas para PYMEs. Todos los derechos reservados.</p>
+        <div class="container">
+            <p>&copy; 2023 Sistema de Ventas para PYMEs. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
