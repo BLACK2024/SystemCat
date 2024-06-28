@@ -31,6 +31,13 @@ section#benefits .col-md-4 h4 {
     color: #343a40; /* Cambia el color del título */
 }
 
+#scrollToTop {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
 
 footer {
     background-color: #343a40;
