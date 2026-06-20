@@ -1,158 +1,328 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SystemCat</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-    <!-- Icono -->
+
+    <title>SystemCat - Soluciones Informáticas</title>
+
     <link rel="icon" href="assets/images/SystemCat.ico" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<style>
-    #scrollToTop {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 99;
-    }
-</style>
-
 <body>
-    <!-- Navbar -->
 
-  
+    <!-- HERO -->
 
-     <!-- Presentation Section -->
-     <section id="presentation" class="py-5">
+    <section class="hero">
+
         <div class="container">
-            <h2 class="text-center">¡Bienvenidos a SystemCat!</h2>
-            
-            
 
-    <!-- Pricing servicios -->
-    <section id="services" class="py-5">
+            <h1>SystemCat</h1>
+
+            <p>
+                Reparación de equipos, soporte técnico y
+                desarrollo de software a medida.
+            </p>
+
+            <a href="#contact" class="btn btn-primary btn-lg">
+                Solicitar Presupuesto
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- PRESENTACION -->
+
+    <section id="about">
+
         <div class="container">
-            <h2 class="text-center">Servicios SystemCat</h2>
+
+            <h2 class="text-center">
+                Sobre Nosotros
+            </h2>
+
+            <p>
+                En SystemCat brindamos soluciones tecnológicas para
+                particulares, comercios e instituciones.
+
+                Realizamos mantenimiento de equipos,
+                instalación de sistemas operativos,
+                actualización de hardware y desarrollo
+                de software a medida.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+
+    <section id="services">
+
+        <div class="container">
+
+            <h2 class="text-center">
+                Nuestros Servicios
+            </h2>
+
             <div class="row">
-                <!-- Repeat this div for each pricing plan you want to add -->
-                <div class="col-md-4">
-                    <div class="card mb-3">
+
+                <div class="col-md-6 col-lg-3 mb-4">
+
+                    <div class="card">
+
                         <div class="card-header text-center">
                             <h4>Mantenimiento</h4>
                         </div>
+
                         <div class="card-body text-center">
-                            <h3>Mantenimiento de PC's, Notebooks y Netbooks</h4></h3>
-                            <p>Realizamos una limpieza completa del equipo, se realizar escaneo y eliminacion de virus. 
-                                Actualizacion de programas y drivers del equipo.</p>
+
+                            <h3>PCs y Notebooks</h3>
+
+                            <p>
+                                Limpieza física y lógica,
+                                eliminación de virus,
+                                optimización y actualización
+                                de software.
+                            </p>
+
                         </div>
+
                     </div>
+
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card mb-3">
+                <div class="col-md-6 col-lg-3 mb-4">
+
+                    <div class="card">
+
                         <div class="card-header text-center">
                             <h4>Sistemas Operativos</h4>
                         </div>
+
                         <div class="card-body text-center">
-                            <h3>Cambio o instalacion de sistemas operativos</h3>
-                            <p>Si queres actualizar tu sistema por uno mas moderno, podemos hacerlo,
-                                 y si necesitas instalar todo desde Cero tambien lo hacemos.
-                                Disponibles Windows 7, 10, 11.</p>
+
+                            <h3>Instalación y Configuración</h3>
+
+                            <p>
+                                Instalación de Windows,
+                                configuración completa,
+                                respaldo y recuperación
+                                de información.
+                            </p>
+
                         </div>
+
                     </div>
+
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card mb-3">
+                <div class="col-md-6 col-lg-3 mb-4">
+
+                    <div class="card">
+
                         <div class="card-header text-center">
-                            <h4>Actualizacion</h4>
+                            <h4>Actualización</h4>
                         </div>
+
                         <div class="card-body text-center">
-                            <h3>Actualizacion de componentes</h3>
-                            <p>Realizamos cambio y actualizacion de componentes fisicos de tu Pc, Netbook o Notebook.</p>
+
+                            <h3>Hardware</h3>
+
+                            <p>
+                                Cambio de discos,
+                                ampliación de memoria RAM,
+                                mantenimiento y armado
+                                de equipos.
+                            </p>
+
                         </div>
+
                     </div>
+
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card mb-3">
+                <div class="col-md-6 col-lg-3 mb-4">
+
+                    <div class="card">
+
                         <div class="card-header text-center">
-                            <h4>Desarrollo a medida</h4>
+                            <h4>Software a Medida</h4>
                         </div>
+
                         <div class="card-body text-center">
-                            <h3>Desarrollo de sistemas informaticos a medida</h3>
-                            <p>Creamos sistemas de escritorio a medida de tus necesidades. Y creamos paginas web informativas para tu negocio, para que puedas promocionar tus productos y servicios, un ejemplo, es esta misma pagina!</p>
+
+                            <h3>Sistemas y Web</h3>
+
+                            <p>
+                                Desarrollo de sistemas
+                                administrativos, educativos,
+                                comerciales y sitios web
+                                informativos.
+                            </p>
+
                         </div>
+
                     </div>
+
                 </div>
-                <!-- Add more pricing cards as needed -->
+
             </div>
+
         </div>
+
     </section>
 
+    <!-- CONTACTO -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact">
+
         <div class="container">
-            <h2 class="text-center">Contactos</h2>
-            <p class="text-center">Para más información, por favor contáctanos.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <!-- Formulario de Contacto -->
-                    <form action="https://formspree.io/f/manwwkdw" method="POST">
-                        <input type="hidden" name="_next" value="https://tu-sitio-web.com/gracias.html">
-                        <div class="form-group">
-                            <label for="name">Nombre</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Tu email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje</label>
-                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Information -->
-    <section id="contact-info" class="py-5 bg-light">
-        <div class="container text-center">
-            <!-- <h2>Contáctanos también via:</h2> -->
-            <p>
-                <a href="https://api.whatsapp.com/send?phone=5493777312383" class="mx-2"><i class="fab fa-whatsapp fa-3x"></i></a>
-                <a href="https://instagram.com/systemcat_24" class="mx-2"><i class="fab fa-instagram fa-3x"></i></a>
-                <a href="mailto:systemcat.24@gmail.com" class="mx-2"><i class="fas fa-envelope fa-3x"></i></a>
+            <h2 class="text-center">
+                Contacto
+            </h2>
+
+            <p class="text-center mb-4">
+                Solicite información o presupuesto sin compromiso.
             </p>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-8">
+
+                    <form action="https://formspree.io/f/manwwkdw"
+                          method="POST">
+
+                        <div class="form-group">
+
+                            <label>Nombre</label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Email</label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                name="_replyto"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Mensaje</label>
+
+                            <textarea
+                                class="form-control"
+                                name="message"
+                                rows="5"
+                                required></textarea>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Enviar
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
         </div>
+
     </section>
 
-    <!-- Botón de Volver al Menú -->
-    <a id="scrollToTop" class="btn btn-primary" href="#"><i class="fas fa-arrow-up"></i></a>
+    <!-- REDES -->
 
+    <section id="contact-info">
 
-    <!-- Footer -->
-    <footer class="text-center py-4 bg-dark text-white">
-        <div class="container">
-            <p>&copy; SystemCat 2024. Todos los derechos reservados.</p>
+        <div class="container text-center">
+
+            <a href="https://api.whatsapp.com/send?phone=5493777312383"
+               class="mx-3">
+
+                <i class="fab fa-whatsapp fa-3x"></i>
+
+            </a>
+
+            <a href="https://instagram.com/systemcat_24"
+               class="mx-3">
+
+                <i class="fab fa-instagram fa-3x"></i>
+
+            </a>
+
+            <a href="mailto:systemcat.24@gmail.com"
+               class="mx-3">
+
+                <i class="fas fa-envelope fa-3x"></i>
+
+            </a>
+
         </div>
+
+    </section>
+
+    <!-- BOTON -->
+
+    <a id="scrollToTop"
+       class="btn btn-primary"
+       href="#">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </a>
+
+    <!-- FOOTER -->
+
+    <footer class="text-center py-4">
+
+        <div class="container">
+
+            <p>
+                © 2026 SystemCat - Todos los derechos reservados.
+            </p>
+
+        </div>
+
     </footer>
 
-    <!-- Bootstrap JS and dependencies -->
+    <!-- JS -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
