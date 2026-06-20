@@ -1,50 +1,163 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #424242;
+:root{
+    --primary:#0d6efd;
+    --secondary:#198754;
+    --dark:#212529;
+    --light:#f8f9fa;
+    --text:#343a40;
 }
 
-header.jumbotron {
-    background-image: url('assets/images/header-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0; /* Aumenta el espacio alrededor del texto */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-section#features .col-md-4 img {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 15px; /* Aumenta el espacio entre la imagen y el texto */
+body{
+    font-family:'Segoe UI', Arial, sans-serif;
+    background-color:#f5f6f8;
+    color:var(--text);
+    line-height:1.6;
 }
 
-section#features .col-md-4 h4 {
-    color: #343a40; /* Cambia el color del título */
+/* HERO */
+
+.hero{
+    background:
+        linear-gradient(
+            rgba(0,0,0,.65),
+            rgba(0,0,0,.65)
+        ),
+        url('../assets/images/header-bg.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+
+    padding:120px 0;
 }
 
-
-section#benefits .col-md-4 img {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 15px; /* Aumenta el espacio entre la imagen y el texto */
+.hero h1{
+    font-size:3rem;
+    font-weight:bold;
+    margin-bottom:20px;
 }
 
-section#benefits .col-md-4 h4 {
-    color: #343a40; /* Cambia el color del título */
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
 }
 
-#scrollToTop {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
+/* SECCIONES */
+
+section{
+    padding:60px 0;
 }
 
-footer {
-    background-color: #424242;
-    color: white;
-    padding: 20px 0; /* Aumenta el espacio alrededor del texto */
+section h2{
+    margin-bottom:40px;
+    font-weight:bold;
 }
 
-footer a {
-    color: white; /* Cambia el color de los enlaces en el pie de página */
+/* TARJETAS */
+
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card-header{
+    background:var(--primary);
+    color:white;
+    border:none;
+}
+
+.card-body h3{
+    font-size:1.2rem;
+    margin-bottom:15px;
+}
+
+/* SOBRE NOSOTROS */
+
+#about{
+    background:white;
+}
+
+#about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+/* CONTACTO */
+
+#contact{
+    background:white;
+}
+
+.form-control{
+    border-radius:10px;
+}
+
+/* REDES */
+
+#contact-info{
+    background:var(--light);
+}
+
+#contact-info i{
+    color:var(--dark);
+    transition:.3s;
+}
+
+#contact-info i:hover{
+    transform:scale(1.15);
+}
+
+/* BOTON ARRIBA */
+
+#scrollToTop{
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:999;
+}
+
+/* FOOTER */
+
+footer{
+    background:var(--dark);
+    color:white;
+}
+
+footer a{
+    color:white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
 }
